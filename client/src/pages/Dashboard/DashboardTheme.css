@@ -1,0 +1,22 @@
+/* Theme-only overrides for dashboard KPI cards.
+   Deliberately contains no banner selectors: the dashboard banner design stays untouched. */
+.redesigned-dashboard .home-metric,
+.redesigned-dashboard .home-metric.metric-red,
+.redesigned-dashboard .home-metric.metric-green,
+.redesigned-dashboard .home-metric.metric-amber,
+.redesigned-dashboard .home-metric.metric-violet {
+  --metric-ink: var(--accent) !important;
+  border-color: color-mix(in srgb, var(--accent) 26%, white) !important;
+  background: linear-gradient(145deg, color-mix(in srgb, var(--accent) 9%, white), var(--surface) 76%) !important;
+}
+.redesigned-dashboard .metric-card-icon {
+  color: #fff !important;
+  border-color: color-mix(in srgb, var(--accent) 24%, white) !important;
+  background: linear-gradient(145deg, var(--accent), var(--accent-dark)) !important;
+}
+.redesigned-dashboard .metric-card-badge {
+  color: var(--accent-dark) !important;
+  border-color: color-mix(in srgb, var(--accent) 23%, white) !important;
+  background: color-mix(in srgb, var(--accent) 8%, white) !important;
+}
+.redesigned-dashboard .metric-foot-mark { color: #fff !important; background: var(--accent) !important; }
