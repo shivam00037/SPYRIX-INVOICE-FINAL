@@ -201,3 +201,5 @@ AI API routes are protected and require a signed-in workspace account.
 - Mobile-responsive invoice editing and site-level black-and-white default theme.
 - Email/password authentication backed by Express, JWT, and MongoDB. Google sign-in is deferred until a later update.
 - Setup steps and required environment variables are documented in [BACKEND-SETUP.md](BACKEND-SETUP.md).
+#   s p y r i x - b u s i n e s s - M a n a g m e n t  
+ 
