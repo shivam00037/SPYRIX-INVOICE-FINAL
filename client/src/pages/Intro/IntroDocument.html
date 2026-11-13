@@ -1054,7 +1054,8 @@ The intro is the first page. Get Started and Login open the sign-in screen; new 
       syncThemeToggle();
     });
     // Navigate to the React login screen in the parent application.
-    const MAIN_SITE_URL = window.location.origin + "/#/login";
+
+const MAIN_SITE_URL = window.top.location.origin + "/#/login";
 
     // Keep the intro visible briefly so the animated SPYRIX loader can be seen.
     window.addEventListener("load", () => {
@@ -1118,7 +1119,8 @@ The intro is the first page. Get Started and Login open the sign-in screen; new 
     // Open the React login screen in the top-level application window.
     function openLogin(event) {
       event.preventDefault();
-      window.top.location.href = window.location.origin + "/#/login";
+
+window.top.location.href = window.top.location.origin + "/#/login";
     }
     document.getElementById("loginLink").addEventListener("click", openLogin);
     document.getElementById("footerLogin").addEventListener("click", openLogin);
