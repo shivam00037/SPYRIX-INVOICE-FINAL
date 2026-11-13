@@ -11,8 +11,7 @@ import dataRoutes from "./routes/data.js";
 import businessRoutes from "./routes/business.js";
 import aiRoutes from "./routes/ai.js";
 import { authenticate } from "./middleware/authenticate.js";
-import dns from "node:dns";
-dns.setServers(["10.65.43.74"]);
+
 const app = express();
 const port = Number(process.env.PORT || 5000);
 
